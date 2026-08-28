@@ -1,42 +1,52 @@
-# Google Form Blueprint — Studio Field Notes Art Coach Match
+# Google Form 藍圖 — Studio Field Notes 兒童藝術教練配對
 
-Use this blueprint to create the live Google Form in the account that will receive applications. The website currently keeps the form URL as a single constant and shows a transparent setup card until a public `/viewform` URL is connected.
+這份藍圖用於建立正式 Google Form。網站已經預留表格嵌入位置；在尚未連接公開 `/viewform` 網址前，頁面會顯示清楚的設定入口，不會假裝表格已經可以提交。
 
-## Form title
+## 表格標題
 
-**Studio Field Notes — Art Coach Match Intake**
+**Studio Field Notes — 兒童藝術教練配對資料表**
 
-## Form description
+## 表格說明
 
-Tell us a little about the child, family or art-coaching practice you have in mind. We use these details only to understand the request and make an initial introduction. Completing this form does not guarantee a match, a student placement or a coaching outcome.
+請告訴我們一些關於孩子、家庭或藝術教學經驗的資料。我們會使用這些內容了解你的需要，並在合適時作一次初步介紹。填寫表格不代表一定會配對成功、一定獲得學生，亦不代表任何教學成果保證。
 
-## Questions
+## 建議問題
 
-| # | Question | Type | Required | Options / notes |
+| # | 題目 | 題型 | 必填 | 選項或說明 |
 |---:|---|---|:---:|---|
-| 1 | Your name / preferred name | Short answer | Yes | For a parent/guardian or coach contact. |
-| 2 | WhatsApp / phone number | Short answer | Yes | Add response validation for a sensible phone number if needed. |
-| 3 | Email address | Short answer | Yes | Enable email validation. |
-| 4 | I am completing this form as… | Multiple choice | Yes | Parent / guardian; Art coach; Other |
-| 5 | Child’s age range | Multiple choice | No | 4–6; 7–9; 10–12; 13–15; 16+; Not applicable — I am a coach |
-| 6 | What would they most enjoy exploring? | Checkboxes | No | Drawing + illustration; Painting + colour; Making + sculpture; Digital art; Portfolio / exam support; Not sure yet; Other |
-| 7 | What kind of art-coaching experience are you looking for? | Checkboxes | No | One-to-one lessons; Small group; Holiday workshop; Portfolio guidance; Confidence-building; Parent + child session; Other |
-| 8 | Which level best describes the learner or your coaching level? | Multiple choice | Yes | New to it; Some experience; Confident / advanced |
-| 9 | Which days and times usually work? | Checkboxes | No | Weekday mornings; Weekday afternoons; Weekday evenings; Saturday morning; Saturday afternoon; Sunday; Flexible; Other |
-| 10 | Where would sessions ideally take place? | Checkboxes | No | Online; At-home; Studio / school; Hong Kong Island; Kowloon; New Territories; Other |
-| 11 | What is the approximate budget per one-to-one session? | Multiple choice | No | HK$150 / session; HK$300 / session; HK$450 / session; HK$500 or above / session; To discuss |
-| 12 | Tell us anything useful about the child, family or your teaching practice. | Paragraph | No | Encourage context, interests, goals, experience, qualifications or safeguarding considerations. Do not request sensitive information that is not needed for an initial introduction. |
-| 13 | How would you prefer us to follow up? | Multiple choice | Yes | WhatsApp / phone; Email; Either is fine |
-| 14 | Consent to initial matching contact | Checkbox | Yes | “I understand that my details will be used to review this enquiry and, where appropriate, make an initial introduction. I understand that a match or outcome is not guaranteed.” |
+| 1 | 你的姓名／稱呼 | 簡答 | 是 | 可填家長、監護人或藝術教練的稱呼。 |
+| 2 | WhatsApp／電話號碼 | 簡答 | 是 | 如有需要，可開啟回應驗證。 |
+| 3 | 電郵地址 | 簡答 | 是 | 啟用電郵格式驗證。 |
+| 4 | 你是以哪個身份填寫？ | 單選 | 是 | 家長／監護人；藝術教練；其他 |
+| 5 | 孩子的年齡範圍 | 單選 | 否 | 4–6 歲；7–9 歲；10–12 歲；13–15 歲；16 歲或以上；不適用，我是藝術教練 |
+| 6 | 孩子目前最想探索甚麼？ | 核取方塊 | 否 | 繪畫與插畫；色彩與綜合媒介；立體創作與手作；數碼藝術；作品集／考試支援；暫時未確定；其他 |
+| 7 | 你正在尋找哪一類藝術教練？ | 核取方塊 | 否 | 興趣啟蒙；一對一創作陪伴；小組課堂；假期工作坊；作品集方向；建立創作信心；親子創作；其他 |
+| 8 | 哪一句最接近孩子目前的創作狀態？ | 單選 | 是 | 剛開始接觸；已有一些經驗；有明確方向或較高程度 |
+| 9 | 你希望藝術教練在課堂中提供甚麼？ | 核取方塊 | 否 | 鼓勵觀察與表達；媒介與技術指導；按孩子興趣調整課程；協助完成作品；建立穩定創作習慣；作品集規劃；其他 |
+| 10 | 平日哪些日子及時段較方便？ | 核取方塊 | 否 | 平日早上；平日下午；平日晚上；星期六早上；星期六下午；星期日；時間彈性；其他 |
+| 11 | 理想的上課方式是甚麼？ | 核取方塊 | 否 | 網上；家中；工作室／學校；香港島；九龍；新界；其他 |
+| 12 | 一對一課堂預算大約是多少？ | 單選 | 否 | HK$150／堂；HK$300／堂；HK$450／堂；HK$500 或以上／堂；希望先了解 |
+| 13 | 請介紹孩子或你的藝術教學方式 | 段落 | 否 | 家長可分享孩子喜歡的主題、材料、創作習慣與期望；教練可分享專長、證書、教學經驗與適合的年齡層。避免提供初步配對不需要的敏感資料。 |
+| 14 | 你最希望我們留意甚麼？ | 段落 | 否 | 例如孩子對陌生環境的反應、語言需要、學習節奏或家庭安排。 |
+| 15 | 你希望我們如何聯絡？ | 單選 | 是 | WhatsApp／電話；電郵；兩者皆可 |
+| 16 | 初步聯絡同意 | 核取方塊 | 是 | 我明白所提供的資料會用於了解此查詢及作初步介紹；我明白配對、學生安排或教學結果並不獲保證。 |
 
-## Recommended settings
+## 「什麼是藝術教練？」的表格定義
 
-Collect email addresses only if that suits the receiving account and the intended follow-up process. Do not make the form public with “edit after submit” enabled. Add a short confirmation message such as: “Thanks — we’ve received your details. We’ll review the brief and contact you if an initial introduction looks relevant.” Avoid promising a response time until the operating process is confirmed.
+可以把以下文字放在表格說明或第 9 題之前的分段說明中：
 
-## Embed steps
+> 藝術教練不是替孩子畫好一幅作品的人。他們以藝術創作為入口，陪孩子練習觀察、選擇、表達與完成；他們可以提供構圖、線條、色彩、媒介與作品整理方面的技術支援，同時保留孩子的想法與嘗試空間。
 
-After creating the form, use **Send → Embed HTML** or copy the public responder URL ending in `/viewform`. In `client/src/pages/Home.tsx`, replace the empty `GOOGLE_FORM_URL` value with that public URL. Do not use the `/edit` URL in the website. Test the public responder view on mobile and desktop before publishing.
+藝術教練與一般興趣班的分別，不在於哪一種必然更好，而在於教學關係與目標不同。興趣班通常以固定主題、團體節奏或多種媒介體驗為主；藝術教練則較多按孩子的反應、需要與創作方向作調整。家長可以按家庭時間、預算與孩子性格選擇合適的安排。
 
-## Privacy and child-safety note
+## 建議設定
 
-Before launch, confirm the data-retention period, who can access responses, how parent/guardian consent is handled and what safeguarding process applies to coach introductions. This blueprint intentionally avoids collecting a child’s full name or sensitive personal details at the first step.
+如果收集電郵地址符合你的跟進方式，可以啟用 Google Forms 的收集電郵功能。不要開啟讓填寫者提交後自行修改回應，除非你已確認資料管理流程。提交後確認訊息可以寫成：「謝謝你分享這份小簡介。我們會先閱讀內容，如有合適的初步介紹，再按你選擇的方式聯絡。」除非已確定營運時限，否則不要承諾固定回覆時間。
+
+## 嵌入網站步驟
+
+建立表格後，使用 **傳送 → 嵌入 HTML**，或複製公開填寫者網址（結尾為 `/viewform`）。把網址填入 `client/src/pages/Home.tsx` 的 `GOOGLE_FORM_URL` 常數。網站只應使用公開填寫網址，不要使用 `/edit` 編輯網址。接入後，請在桌面與手機版重新測試表格高度、題目換行及提交後確認訊息。
+
+## 家長與兒童資料提醒
+
+正式上線前，請確認回應資料由誰查閱、保存多久、如何處理家長／監護人同意，以及藝術教練介紹前後的安全與溝通流程。第一步刻意不要求孩子的全名或其他不必要的敏感個人資料；如日後需要收集更多資料，應先確認用途與適當的私隱安排。
